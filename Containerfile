@@ -23,7 +23,6 @@ LABEL summary="${SUMMARY}" \
     io.k8s.description="${DESCRIPTION}" \
     io.k8s.display-name="Virtio ${VIRTIO_VERSION}" \
     io.openshift.expose-services="8080:http" \
-    io.openshift.expose-services="8443:https" \
     io.openshift.tags="builder,${NAME},${NAME}-${VIRTIO_VERSION}" \
     com.redhat.component="${NAME}-${VIRTIO_VERSION}-container" \
     name="ubi8/${NAME}-${VIRTIO_VERSION}" \
