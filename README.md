@@ -4,6 +4,12 @@
 This project will guide you how to create a simple container which include the virtio drivers for Windows.
 and expose it over `http://` to the cluser.
 
+## Project Status
+
+[x] Expose virtio-vim over http
+[ ] Expose virtio-vim over SAMBA
+[ ] Auto download the RPM
+[ ] CI to auto build the image for several virtio version
 
 ## Build you own container
 
@@ -69,3 +75,7 @@ $ oc get routes
 NAME         HOST/PORT                         PATH   SERVICES     PORT       TERMINATION   WILDCARD
 virtio-win   virtio-win.apps.ocp.example.com          virtio-win   8080-tcp                 None
 ```
+
+And the drivers should be accessable via the url
+
+    http://virtio-win.apps.ocp.example.com
