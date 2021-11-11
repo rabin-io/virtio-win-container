@@ -9,8 +9,8 @@ and expose it over `http://` to the cluser.
 
 * Clone this repo
 * You will need to download the `virtio-win.rpm` manually (should be on the same folder)
-  * Fedora:
   * RedHat: https://access.redhat.com/downloads
+  * CentOS: https://pkgs.org/download/virtio-win
 
 ```bash
 $ ls -l
@@ -32,8 +32,8 @@ podman push virtio-win docker://quay.io/myrepo/virtio-win:1.9.19
 * Run the container from Openshift
 
 ```bash
-oc new-porject virtio-win
-oc new-app --docker-image=quay.io/myrepo/virtio-win:1.9.19 --name=virtio-vin
+$ oc new-porject virtio-win
+$ oc new-app --docker-image=quay.io/myrepo/virtio-win:1.9.19 --name=virtio-vin
 
 --> Found container image 646d659 (About an hour old) from quay.io for "quay.io/myrepo/virtio-win:1.9.19"
 
